@@ -1,3 +1,4 @@
+
 /**
  * A program to carry on conversations with a human user.
  * This is the initial version that:  
@@ -41,6 +42,35 @@ public class Magpie2
 				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+		}
+		else if (statement.indexOf("cat") >=0 || statement.indexOf("dog") >=0)
+		{
+		    response = "tell me more about your pets.";
+		}
+		else if (statement.indexOf("Mr.Schmit") >=0)
+		{
+		    response = "He sounds like a really good teacher";
+		    
+		}
+		else if (statement.indexOf("weather") >=0)
+		{
+		    response = "How is the weather outside?"
+		}
+		else if (statement.indexOf("computer") >=0)
+		{
+		    response = "Computers are great!";
+		}
+		else if (statement.indexOf("tired") >=0)
+		{
+		    response = "Man i am really tired too!";
+		}
+		else if (statement.indexOf("baseball") >=0)
+		{
+		    response = "That right there is the best sport known to man";
+		}
+		else if(statement.trim().equals(""))
+		{
+		    response = "Please say something.";
 		}
 		else
 		{
