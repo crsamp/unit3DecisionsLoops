@@ -120,186 +120,186 @@ public class GameOfLife
         Location loc3 = new Location(X3, Y3);
         grid.put(loc3, rock3);
         
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X4, Y4);
-        grid.put(loc1, rock1);
+        Rock rock4 = new Rock();
+        Location loc4 = new Location(X4, Y4);
+        grid.put(loc4, rock4);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X5, Y5);
-        grid.put(loc2, rock2);
+        Rock rock5 = new Rock();
+        Location loc5 = new Location(X5, Y5);
+        grid.put(loc5, rock5);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X6, Y6);
-        grid.put(loc3, rock3);
+        Rock rock6 = new Rock();
+        Location loc6 = new Location(X6, Y6);
+        grid.put(loc6, rock6);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X7, Y7);
-        grid.put(loc1, rock1);
+        Rock rock7 = new Rock();
+        Location loc7 = new Location(X7, Y7);
+        grid.put(loc7, rock7);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X8, Y8);
-        grid.put(loc2, rock2);
+        Rock rock8 = new Rock();
+        Location loc8 = new Location(X8, Y8);
+        grid.put(loc8, rock8);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X9, Y9);
-        grid.put(loc3, rock3);
+        Rock rock9 = new Rock();
+        Location loc9 = new Location(X9, Y9);
+        grid.put(loc9, rock9);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X10, Y10);
-        grid.put(loc1, rock1);
+        Rock rock10 = new Rock();
+        Location loc10 = new Location(X10, Y10);
+        grid.put(loc10, rock10);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X11, Y11);
-        grid.put(loc2, rock2);
+        Rock rock11 = new Rock();
+        Location loc11 = new Location(X11, Y11);
+        grid.put(loc11, rock11);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X12, Y12);
-        grid.put(loc3, rock3);
+        Rock rock12 = new Rock();
+        Location loc12 = new Location(X12, Y12);
+        grid.put(loc12, rock12);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X13, Y13);
-        grid.put(loc1, rock1);
+        Rock rock13 = new Rock();
+        Location loc13 = new Location(X13, Y13);
+        grid.put(loc13, rock13);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X14, Y14);
-        grid.put(loc2, rock2);
+        Rock rock14 = new Rock();
+        Location loc14 = new Location(X14, Y14);
+        grid.put(loc14, rock14);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X15, Y15);
-        grid.put(loc3, rock3);
+        Rock rock15 = new Rock();
+        Location loc15 = new Location(X15, Y15);
+        grid.put(loc15, rock15);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X16, Y16);
-        grid.put(loc1, rock1);
+        Rock rock16 = new Rock();
+        Location loc16 = new Location(X16, Y16);
+        grid.put(loc16, rock16);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X16, Y16);
-        grid.put(loc2, rock2);
+        Rock rock17 = new Rock();
+        Location loc17 = new Location(X17, Y17);
+        grid.put(loc17, rock17);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X17, Y17);
-        grid.put(loc3, rock3);
+        Rock rock18 = new Rock();
+        Location loc18 = new Location(X18, Y18);
+        grid.put(loc18, rock18);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X17, Y17);
-        grid.put(loc1, rock1);
+        Rock rock19 = new Rock();
+        Location loc19 = new Location(X19, Y19);
+        grid.put(loc19, rock19);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X18, Y18);
-        grid.put(loc2, rock2);
+        Rock rock20 = new Rock();
+        Location loc20 = new Location(X20, Y20);
+        grid.put(loc20, rock20);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X19, Y19);
-        grid.put(loc3, rock3);
+        Rock rock21 = new Rock();
+        Location loc21 = new Location(X21, Y21);
+        grid.put(loc21, rock21);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X20, Y20);
-        grid.put(loc1, rock1);
+        Rock rock22 = new Rock();
+        Location loc22 = new Location(X22, Y22);
+        grid.put(loc22, rock22);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X21, Y21);
-        grid.put(loc2, rock2);
+        Rock rock23 = new Rock();
+        Location loc23 = new Location(X23, Y23);
+        grid.put(loc23, rock23);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X22, Y22);
-        grid.put(loc3, rock3);
+        Rock rock24 = new Rock();
+        Location loc24 = new Location(X24, Y24);
+        grid.put(loc24, rock24);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X23, Y23);
-        grid.put(loc1, rock1);
+        Rock rock25 = new Rock();
+        Location loc25 = new Location(X25, Y25);
+        grid.put(loc25, rock25);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X24, Y24);
-        grid.put(loc2, rock2);
+        Rock rock26 = new Rock();
+        Location loc26 = new Location(X26, Y26);
+        grid.put(loc26, rock26);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X25, Y25);
-        grid.put(loc3, rock3);
+        Rock rock27 = new Rock();
+        Location loc27 = new Location(X27, Y27);
+        grid.put(loc27, rock27);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X26, Y26);
-        grid.put(loc1, rock1);
+        Rock rock28 = new Rock();
+        Location loc28 = new Location(X28, Y28);
+        grid.put(loc28, rock28);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X27, Y27);
-        grid.put(loc2, rock2);
+        Rock rock29 = new Rock();
+        Location loc29 = new Location(X29, Y29);
+        grid.put(loc29, rock29);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock30 = new Rock();
+        Location loc30 = new Location(X30, Y30);
+        grid.put(loc30, rock30);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock31 = new Rock();
+        Location loc31 = new Location(X31, Y31);
+        grid.put(loc31, rock31);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock32 = new Rock();
+        Location loc32 = new Location(X32, Y32);
+        grid.put(loc32, rock32);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock33 = new Rock();
+        Location loc33 = new Location(X33, Y33);
+        grid.put(loc33, rock33);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock34 = new Rock();
+        Location loc34 = new Location(X34, Y34);
+        grid.put(loc34, rock34);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock35 = new Rock();
+        Location loc35 = new Location(X35, Y35);
+        grid.put(loc35, rock35);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock36 = new Rock();
+        Location loc36 = new Location(X36, Y36);
+        grid.put(loc36, rock36);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock37 = new Rock();
+        Location loc37 = new Location(X37, Y37);
+        grid.put(loc37, rock37);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock38 = new Rock();
+        Location loc38 = new Location(X38, Y38);
+        grid.put(loc38, rock38);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock39 = new Rock();
+        Location loc39 = new Location(X39, Y39);
+        grid.put(loc39, rock39);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock40 = new Rock();
+        Location loc40 = new Location(X40, Y40);
+        grid.put(loc40, rock40);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock41 = new Rock();
+        Location loc41 = new Location(X41, Y41);
+        grid.put(loc41, rock41);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock42 = new Rock();
+        Location loc42 = new Location(X42, Y42);
+        grid.put(loc42, rock42);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock43 = new Rock();
+        Location loc43 = new Location(X43, Y43);
+        grid.put(loc43, rock43);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock44 = new Rock();
+        Location loc44 = new Location(X44, Y44);
+        grid.put(loc44, rock44);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        Rock rock45 = new Rock();
+        Location loc45 = new Location(X45, Y45);
+        grid.put(loc45, rock45);
          
-        Rock rock1 = new Rock();
-        Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        Rock rock46 = new Rock();
+        Location loc46 = new Location(X46, Y46);
+        grid.put(loc46, rock46);
         
-        Rock rock2 = new Rock();
-        Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        Rock rock47 = new Rock();
+        Location loc47= new Location(X47, Y47);
+        grid.put(loc47, rock47);
         
-        Rock rock3 = new Rock();
-        Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
-        
+        Rock rock48 = new Rock();
+        Location loc48 = new Location(X48, Y48);
+        grid.put(loc48, rock48);
+       
     }
 
     /**
