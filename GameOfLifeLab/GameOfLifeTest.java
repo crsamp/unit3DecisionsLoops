@@ -68,10 +68,10 @@ public class GameOfLifeTest
          */
         
         GameOfLife game = new GameOfLife();
-        final int ROWS = game.getNumRows();
-        final int COLS = game.getNumCols();
+        final int ROWS = 8;
+        final int COLS = 8;
 
-        for(int row = 0; row < ROWS; row++)
+        for(int row = 0; row < ROWS ; row++)
         {
             for(int col = 0; col < COLS; col++)
             {
@@ -104,7 +104,15 @@ public class GameOfLifeTest
 
     @Test
     public void testFinalState()
+    
     {
+        GameOfLife games = new GameOfLife();
+        games.createNextGeneration();
+        games.createNextGeneration();
+        games.createNextGeneration();
+        
+        
+        
         /* verify that the actual pattern matches the expected pattern after 3 generations 
             0 1 2 3 4 5 6 7 8
           0 - - - - x - - - -
@@ -119,8 +127,38 @@ public class GameOfLifeTest
           
           
          */ 
-        
-        
+        for (int rows = 0; rows<9; rows++)
+        {
+            for (int column = 0; column<9; column++)
+            {
+                Actor cells = games.getActor(rows, column);
+                
+                if(     (rows == 4 && column == 0) ||
+                        (rows == 4 && column == 1) ||
+                        (rows == 4 && column == 2) ||
+                        (rows == 0 && column == 4) ||
+                        (rows == 1 && column == 4) ||
+                        (rows == 2 && column == 4) ||
+                        (rows == 3 && column == 4) ||
+                        (rows == 6 && column == 4) ||
+                        (rows == 7 && column == 4) ||
+                        (rows == 8 && column == 4) ||
+                        (rows == 4 && column == 6) ||
+                        (rows == 4 && column == 7) ||
+                        (rows == 4 && column == 8))
+                {
+                    assertNotNull("expected alive cell at (" +rows+", "+column+ ")", cells);
+                }
+                else
+                {
+                    assertNull("expected dead cell at ("+rows+", "+column+")",cells);
+                }
+            }
+        }
     }
 }
+
+       
+    
+
 
