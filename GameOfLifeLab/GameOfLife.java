@@ -321,17 +321,33 @@ public class GameOfLife
         
         // insert magic here...
         int neighborCount = 0;
-        int[] occupiedLocations;
-        int[] newRockLocations;
+        Location occupiedLocations[];
+        int[][] newRockLocations;
         
         for (int rowIt = 0;rowIt<17;rowIt++)
         {
             
             for (int columnIt = 0;columnIt<17; columnIt++)
             {
-                if (grid.get(rowIt,columnIt == true))
+                Location loc = new Location(rowIt,columnIt);
+                if (grid.get(loc) == null)
                 {
-                    occupiedLocations = grid.getOccupiedAdjacentLocations({rowIt,columnIt});
+                    occupiedLocations = grid.getOccupiedAdjacentLocations(loc);
+                    neighborCount = 0;
+                    for (int j = 0; occupiedLocations.size(); j++)
+                    {
+                        neighborCount++;
+                        i++;
+                    }
+                    /**if (neighborCount == 3)
+                    {
+                        newRockLocations = new int[][];
+                    }
+                    */
+                }
+                else
+                {
+                    occupiedLocations = grid.getOccupiedAdjacentLocations(loc);
                     neighborCount = 0;
                     for (int i = 0; occupiedLocations.size(); i++)
                     {
@@ -345,20 +361,7 @@ public class GameOfLife
                 
                         
                 }
-                if (grid.get(rowIt,columnIt) == null)
-                {
-                    occupiedLocations = grid.getOccupiedAdjacentLocations({rowIt,columnIt});
-                    neighborCount = 0;
-                    for (int j = 0; occupiedLocations.size(); j++)
-                    {
-                        neighborCount++;
-                        i++;
-                    }
-                    if (neighborCount == 3)
-                    {
-                        newRockLocations = new int[] {rowIt,columnIt];
-                    }
-                }
+                
             }
         }
                 
