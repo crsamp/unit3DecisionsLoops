@@ -4,7 +4,7 @@ import info.gridworld.actor.Rock;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.BoundedGrid;
 import info.gridworld.grid.Location;
-
+import java.util.ArrayList;
 /**
  * Game of Life starter code. Demonstrates how to create and populate the game using the GridWorld framework.
  * Also demonstrates how to provide accessor methods to make the class testable by unit tests.
@@ -320,8 +320,9 @@ public class GameOfLife
         Grid<Actor> grid = world.getGrid();
         
         // insert magic here...
+        
         int neighborCount = 0;
-        Location occupiedLocations[];
+        int [][] occupiedLocations[];
         int[][] newRockLocations;
         
         for (int rowIt = 0;rowIt<17;rowIt++)
@@ -330,21 +331,25 @@ public class GameOfLife
             for (int columnIt = 0;columnIt<17; columnIt++)
             {
                 Location loc = new Location(rowIt,columnIt);
+                ArrayList<Location> adjLoc = new ArrayList<Location>();
                 if (grid.get(loc) == null)
                 {
-                    occupiedLocations = grid.getOccupiedAdjacentLocations(loc);
+                    adjLoc = grid.getOccupiedAdjacentLocations(loc);
                     neighborCount = 0;
-                    for (int j = 0; occupiedLocations.size(); j++)
+                    
+                    for (int j = 0; j < adjLoc.size(); j++)
                     {
                         neighborCount++;
-                        i++;
+                        j++;
                     }
-                    /**if (neighborCount == 3)
+                    
+                    if (neighborCount == 3)
                     {
                         newRockLocations = new int[][];
                     }
-                    */
+                    
                 }
+                /*
                 else
                 {
                     occupiedLocations = grid.getOccupiedAdjacentLocations(loc);
@@ -361,9 +366,10 @@ public class GameOfLife
                 
                         
                 }
-                
+                */
             }
         }
+        
                 
         
     }
