@@ -320,6 +320,48 @@ public class GameOfLife
         Grid<Actor> grid = world.getGrid();
         
         // insert magic here...
+        int neighborCount = 0;
+        int[] occupiedLocations;
+        int[] newRockLocations;
+        
+        for (int rowIt = 0;rowIt<17;rowIt++)
+        {
+            
+            for (int columnIt = 0;columnIt<17; columnIt++)
+            {
+                if (grid.get(rowIt,columnIt == true))
+                {
+                    occupiedLocations = grid.getOccupiedAdjacentLocations({rowIt,columnIt});
+                    neighborCount = 0;
+                    for (int i = 0; occupiedLocations.size(); i++)
+                    {
+                        neighborCount++;
+                        i++;
+                    }
+                    if (neighborCount == 2 || neighbotCount == 3)
+                    {
+                        newRockLocations = new int[] {rowIt,columnIt};
+                    }
+                
+                        
+                }
+                if (grid.get(rowIt,columnIt) == null)
+                {
+                    occupiedLocations = grid.getOccupiedAdjacentLocations({rowIt,columnIt});
+                    neighborCount = 0;
+                    for (int j = 0; occupiedLocations.size(); j++)
+                    {
+                        neighborCount++;
+                        i++;
+                    }
+                    if (neighborCount == 3)
+                    {
+                        newRockLocations = new int[] {rowIt,columnIt];
+                    }
+                }
+            }
+        }
+                
         
     }
     
