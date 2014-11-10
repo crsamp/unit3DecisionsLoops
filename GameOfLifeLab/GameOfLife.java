@@ -318,13 +318,12 @@ public class GameOfLife
         
         // create the grid, of the specified size, that contains Actors
         Grid<Actor> grid = world.getGrid();
-        
+        BoundedGrid<Actor> grid2 = new BoundedGrid<Actor>(ROWS, COLS);
         // insert magic here...
         
-        int neighborCount = 0;
-        int [][] occupiedLocations[];
-        int[][] newRockLocations;
         
+        int xRow;
+        int yColumn;
         for (int rowIt = 0;rowIt<17;rowIt++)
         {
             
@@ -335,41 +334,37 @@ public class GameOfLife
                 if (grid.get(loc) == null)
                 {
                     adjLoc = grid.getOccupiedAdjacentLocations(loc);
-                    neighborCount = 0;
-                    
-                    for (int j = 0; j < adjLoc.size(); j++)
+                   
+                    if (adjLoc.size() == 3)
                     {
-                        neighborCount++;
-                        j++;
-                    }
-                    
-                    if (neighborCount == 3)
-                    {
-                        newRockLocations = new int[][];
+                        xRow = rowIt;
+                        yColumn = columnIt;
+                        Rock rocks = new Rock();
+                        Location locs = new Location(xRow, yColumn);
+                        grid2.put(locs, rocks);
                     }
                     
                 }
-                /*
+                
                 else
                 {
-                    occupiedLocations = grid.getOccupiedAdjacentLocations(loc);
-                    neighborCount = 0;
-                    for (int i = 0; occupiedLocations.size(); i++)
+                    adjLoc = grid.getOccupiedAdjacentLocations(loc);
+                
+                    if (adjLoc.size() == 2 || adjLoc.size() == 3)
                     {
-                        neighborCount++;
-                        i++;
-                    }
-                    if (neighborCount == 2 || neighbotCount == 3)
-                    {
-                        newRockLocations = new int[] {rowIt,columnIt};
+                        xRow = rowIt;
+                        yColumn = columnIt;
+                        Rock rocks = new Rock();
+                        Location locs = new Location(xRow, yColumn);
+                        grid2.put(locs, rocks);
                     }
                 
                         
                 }
-                */
+                
             }
         }
-        
+        world.setGrid(grid2);
                 
         
     }
@@ -415,8 +410,14 @@ public class GameOfLife
      *
      */
     public static void main(String[] args)
+            throws InterruptedException
     {
         GameOfLife game = new GameOfLife();
+        while (true)
+        {
+            game.createNextGeneration();
+            Thread.sleep(500);
+        }
     }
 
 }
