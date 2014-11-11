@@ -110,20 +110,25 @@ public class GameOfLifeTest
         games.createNextGeneration();
         games.createNextGeneration();
         games.createNextGeneration();
+        games.createNextGeneration();
+        games.createNextGeneration();
+        games.createNextGeneration();
+        games.createNextGeneration();
+        games.createNextGeneration();
         
         
         
-        /* verify that the actual pattern matches the expected pattern after 3 generations 
+        /* verify that the actual pattern matches the expected pattern after 8 generations 
             0 1 2 3 4 5 6 7 8
-          0 - - - - x - - - -
-          1 - - - - x - - - -
-          2 - - - - x - - - -
+          0 - - - - - - - - -
+          1 - - - - - - - - -
+          2 - - - x x x - - -
           3 - - - - - - - - -
-          4 x x x - - - x x x
-          5 - - - - - - - - -
-          6 - - - - x - - - -
-          7 - - - - x - - - -
-          8 - - - - x - - - - 
+          4 - - x - - - - x -
+          5 - - x - - - - x -
+          6 - - x - - - - x -
+          7 - - - - x x x - -
+          8 - - - - - - - - - 
           
           
          */ 
@@ -133,19 +138,19 @@ public class GameOfLifeTest
             {
                 Actor cells = games.getActor(rows, column);
                 
-                if(     (rows == 4 && column == 0) ||
-                        (rows == 4 && column == 1) ||
-                        (rows == 4 && column == 2) ||
-                        (rows == 0 && column == 4) ||
-                        (rows == 1 && column == 4) ||
+                if(     (rows == 4 && column == 2) ||
+                        (rows == 5 && column == 2) ||
+                        (rows == 6 && column == 2) ||
                         (rows == 2 && column == 4) ||
-                        (rows == 3 && column == 4) ||
-                        (rows == 6 && column == 4) ||
                         (rows == 7 && column == 4) ||
-                        (rows == 8 && column == 4) ||
-                        (rows == 4 && column == 6) ||
+                        (rows == 2 && column == 5) ||
+                        (rows == 7 && column == 5) ||
+                        (rows == 2 && column == 6) ||
+                        (rows == 7 && column == 6) ||
                         (rows == 4 && column == 7) ||
-                        (rows == 4 && column == 8))
+                        (rows == 5 && column == 7) ||
+                        (rows == 6 && column == 7))
+                        
                 {
                     assertNotNull("expected alive cell at (" +rows+", "+column+ ")", cells);
                 }
